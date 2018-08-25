@@ -1,11 +1,11 @@
 steps:
 - name: 'gcr.io/bunteam-214216/bunteam'
-  args: ['build', '-t', 'gcr.io/bunteam-214216/bunteam', '.']
+  args: ['build', '-t', 'gcr.io/[PROJECT-ID]/[IMAGE]:[TAG]', '.']
   timeout: 500s
 - name: 'gcr.io/bunteam-214216/bunteam'
-  args: ['push', 'gcr.io/bunteam-214216/bunteam']
+  args: ['push', 'gcr.io/[PROJECT-ID]/[IMAGE]:[TAG]']
 - name: 'gcr.io/bunteam-214216/bunteam'
-  args: ['set', 'image', 'deployment/bunteam-web', 'bunteam-web=gcr.io/bunteam-214216/bunteam']
+  args: ['set', 'image', 'deployment/bunteam-web', 'bunteam-web=gcr.io/[PROJECT-ID]/[IMAGE]:[TAG]']
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=asia-southeast1'
   - 'CLOUDSDK_CONTAINER_CLUSTER=bunteam-cluster'
