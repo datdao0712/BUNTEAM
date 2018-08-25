@@ -1,10 +1,10 @@
 steps:
-- name: 'gcr.io/bunteam-214216/bunteam'
+- name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/bunteam-214216/bunteam:$REVISION_ID', '.']
   timeout: 500s
-- name: 'gcr.io/bunteam-214216/bunteam'
+- name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/bunteam-214216/bunteam:$REVISION_ID']
-- name: 'gcr.io/bunteam-214216/bunteam'
+- name: 'gcr.io/cloud-builders/kubectl'
   args: ['set', 'image', 'deployment/bunteam-web', 'bunteam-web=gcr.io/bunteam-214216/bunteam:$REVISION_ID']
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=asia-southeast1'
