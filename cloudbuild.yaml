@@ -12,5 +12,5 @@ steps:
   - bunteam-web
   - bunteam-web=gcr.io/bunteam-214216/bunteam:$REVISION_ID
   env:
-  - 'CLOUDSDK_COMPUTE_REGION=asia-southeast1'
+  - 'CLOUDSDK_COMPUTE_ZONE=asia-southeast1-a'
   - 'CLOUDSDK_CONTAINER_CLUSTER=bunteam-cluster'
