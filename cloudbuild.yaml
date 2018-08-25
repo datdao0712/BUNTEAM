@@ -4,7 +4,7 @@ steps:
   timeout: 500s
 - name: 'gcr.io/bunteam-214216/bunteam'
   args: ['push', 'gcr.io/bunteam-214216/bunteam']
-- name: 'gcr.io/cloud-builders/kubectl'
+- name: 'gcr.io/bunteam-214216/bunteam'
   args: ['set', 'image', 'deployment/bunteam-web', 'bunteam-web=gcr.io/bunteam-214216/bunteam']
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=asia-southeast1'
