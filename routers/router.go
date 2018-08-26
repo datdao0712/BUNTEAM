@@ -7,5 +7,6 @@ import (
 
 func init() {
     beego.Router("/", &controllers.MainController{})
-    beego.Router("/hoang", &controllers.MainController{}, "get:HelloSitepoint")
+	beego.Router("/hoang", &controllers.MainController{}, "get:HelloSitepoint")
+	beego.Router("profile", &controllers.MainController{}, "get:Profile")
 }
