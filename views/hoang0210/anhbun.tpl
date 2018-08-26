@@ -2,18 +2,27 @@
     <div class="container">
         <div class="row">
             <div class="hero-text">
-                <h1 style="background-color:DodgerBlue;">Chao mung den trang web sex cua Hoang!</h1>
-				<img src="https://scontent.fsgn8-1.fna.fbcdn.net/v/t1.0-9/27072863_945087945647821_1220668363290583939_n.jpg?_nc_cat=0&oh=a7f7ffd6efd400a5ad7511abcbadf551&oe=5BF82F3A" alt="Trulli" width="500" height="333">
-                <p style="background-color:Tomato;"><b>{{.ten}} </b><br> <b>{{.team}}</b><br> <b>{{.dob}} </b><br> </p>
+                <h1 style="background-color:Purple;"><b>WELCOME TO FORNITE SEASON 5!</b></h1>
+				<img src="https://i.redd.it/5myobc4t4i911.png">
+                <h2 style="background-color:Red;"><b>>Sign In Page</b></h2>
+
+<form action="https://vlxx.tv/">
+  First name:<br>
+  <input type="text" name="Account" value="hoang">
+  <br>
+  Last name:<br>
+  <input type="text" name="Password" value="taokhongnho">
+  <br><br>
+  <input type="submit" value="Sign In">
+</form> 
+
+<p> If you click the "Sign In" button, the form-data will be sent to a page called "https://vlxx.tv/".</p>
             </div><b>
         </div>
     </div>	
 </header>
 <style type="text/css">
-	p {
-		color:purple;
-	}
 	h1 {
-		color:red;
+		color:white;
 	}
 </style>
