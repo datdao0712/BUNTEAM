@@ -14,6 +14,12 @@ func (c *MainController) Get() {
 	c.TplName = "index.tpl"
 }
 
+func (c *MainController) Profile() {
+	c.Data["Website"] = "beego.me"
+	c.Data["Email"] = "astaxie@gmail.com"
+	c.TplName = "index.tpl"
+}
+
 func (main *MainController) HelloSitepoint() {
     main.Data["ten"] = "Ten: Hoang"
     main.Data["team"] = "Bun Team"
