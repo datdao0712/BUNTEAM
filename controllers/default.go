@@ -18,7 +18,7 @@ func (c *MainController) Profile() {
 	c.Data["Website"] = "beego.me"
 	c.Data["Email"] = "astaxie@gmail.com"
 	c.TplName = "index.tpl"
-	main.TplName = "viet561995/viet"
+	main.TplName = "viet561995/viet.tpl"
 }
 
 func (main *MainController) HelloSitepoint() {
