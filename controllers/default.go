@@ -17,7 +17,7 @@ func (c *MainController) Get() {
 func (c *MainController) Profile() {
 	c.Data["Website"] = "beego.me"
 	c.Data["Email"] = "astaxie@gmail.com"
-	c.TplName = "index.tpl"
+	c.TplName = "viet.tpl"
 	main.TplName = "viet561995/viet.tpl"
 }
 
