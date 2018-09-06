@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Profile của Trần Hoàng Quốc Việt</title>
+<title>Chào Mừng bạn đến với Bủn Team</title>
 </head>
 <body>
 
-<h1>AAAAAAAAAAAAAAAAAA</h1>
-<p>aaaaaaaaaa .</p>
+<h1>BỦN TEAM</h1>
+<p>TEAM BỦN .</p>
 
 </body>
 </html>
