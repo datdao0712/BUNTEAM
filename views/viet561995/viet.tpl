@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<a href="facebook.com">Click vào đây để chuyển tiếp sang facebook</a>
+<a href="https://www.facebook.com/">Click vào đây để chuyển tiếp sang facebook</a>
 
 </body>
 </html>
