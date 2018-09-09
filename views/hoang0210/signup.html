@@ -8,6 +8,12 @@ body {font-family: Arial, Helvetica, sans-serif;
     }
 * {box-sizing: border-box;}
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Full-width input fields */
 input[type=text], input[type=password] {
     width: 100%;
@@ -125,8 +131,9 @@ hr {
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> -->
   <form class="modal-content" action="/action_page.php">
     <div class="container">
-      <h1 style="text-align:center">Sign Up</h1>
+      <h1 style="text-align:center; color:purple"> Sign Up </h1>
       <p style="text-align:center">Please fill in this form to create an account.</p>
+      <img src="https://blog.golang.org/gopherbelly300.jpg" alt="Con Bun"  width="60" height="60">
       <hr>
       <label for="usename"><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="username" required>
@@ -165,6 +172,7 @@ window.onclick = function(event) {
     }
 }
 </script>
-
 </body>
 </html>
+
+    
