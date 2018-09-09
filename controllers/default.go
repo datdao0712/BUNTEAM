@@ -40,5 +40,5 @@ func (sub *Sang2Controller) Post() {
 	sublastname := sub.GetString("lastname")
 	sub.Data["firstname"] = subfirstname
 	sub.Data["lastname"] = sublastname
-	sub.TplName = "sangsubmit.html"
+	sub.TplName = "sang.html"
 }
