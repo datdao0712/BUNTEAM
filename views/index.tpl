@@ -7,7 +7,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="https://colorlib.com/etc/lf/Login_v5/images/icons/icon-google.png"/>
+	<link rel="icon" type="image/png" href="https://blog.golang.org/gopherbelly300.jpg"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v5/vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
@@ -36,8 +36,9 @@
 			<div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33">
 				<form class="login100-form validate-form flex-sb flex-w" action="/hoang/show" method="POST">
 					<span class="login100-form-title p-b-53" style="color:purple">
-						<b>Welcome to BUNTEAM </b>
+						<b>Welcome to BUNTEAM <img src="https://blog.golang.org/gopherbelly300.jpg" alt="Con Bun" width="60" height="60"> </b>
 					</span>
+					
 
 					<a href="#" class="btn-face m-b-20">
 						<i class="fa fa-facebook-official"></i>
