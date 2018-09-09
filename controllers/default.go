@@ -47,3 +47,7 @@ func (show *HoangController) Show(){
 	show.TplName = "hoang0210/show.html"
 } 
 
+func (signup *HoangController) Signup(){
+	signup.TplName = "hoang0210/signup.html"
+} 
+
