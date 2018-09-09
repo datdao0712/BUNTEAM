@@ -35,7 +35,7 @@ func (main *MainController) HelloSitepoint() {
 func (sa *SangController) Get() {
 	sa.TplName = "sang/sang.html"
 }
-func (sub *Sang2Controller) Post() {
+func (sub *SangController) Post() {
 	subfirstname := sub.GetString("firstname")
 	sublastname := sub.GetString("lastname")
 	sub.Data["firstname"] = subfirstname
