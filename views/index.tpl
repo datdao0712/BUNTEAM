@@ -85,7 +85,7 @@
 							Not a member?
 						</span>
 
-						<a href="/hoang/signup">
+						<a href="/signup">
 							Sign up now
 						</a>
 					</div>
