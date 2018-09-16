@@ -10,16 +10,13 @@ type MainController struct {
 type SangController struct {
 	beego.Controller
 }
-<<<<<<< HEAD
 type Sang2Controller struct {
 	beego.Controller
 }
 
-=======
 type HoangController struct {
 	beego.Controller
 }
->>>>>>> 37ad8b86eb3ecf0726eb014b354a4775177ef154
 func (c *MainController) Get() {
 	c.Data["Website"] = "beego.me"
 	c.Data["Email"] = "astaxie@gmail.com"
