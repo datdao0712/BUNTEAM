@@ -17,17 +17,19 @@ type Sang2Controller struct {
 type HoangController struct {
 	beego.Controller
 }
+
+type VietController struct {
+	beego.Controller
+}
+
 func (c *MainController) Get() {
 	c.Data["Website"] = "beego.me"
 	c.Data["Email"] = "astaxie@gmail.com"
 	c.TplName = "index.tpl"
 }
 
-
-func (c *MainController) Profile() {
-	c.Data["Website"] = "beego.me"
-	c.Data["Email"] = "astaxie@gmail.com"
-	c.TplName = "viet561995/viet.tpl"
+func (Study *VietController) Study() {
+	Study.TplName = "viet/hoc.tpl"
 }
 
 func (main *MainController) HelloSitepoint() {
@@ -48,18 +50,29 @@ func (sub *SangController) Post() {
 	sub.TplName = "sang/sang2.html"
 }
 
-func (login	 *HoangController) Login() {
+func (login *HoangController) Login() {
 	login.TplName = "hoang0210/login.html"
 }
 
-func (show *HoangController) Show(){
+func (show *HoangController) Show() {
 	user := show.GetString("username")
 	pass := show.GetString("pass")
 	show.Data["username"] = user
 	show.Data["pass"] = pass
 	show.TplName = "hoang0210/show.html"
-} 
+}
 
-func (signup *HoangController) Signup(){
+func (signup *HoangController) Signup() {
 	signup.TplName = "hoang0210/signup.html"
-} 
+}
+
+func (signup *VietController) Signup() {
+	signup.TplName = "viet/signup.html"
+}
+func (signup *VietController) Submit() {
+	firstname := signup.GetString("firstname")
+	lastname := signup.GetString("lastname")
+	signup.Data["firstname"] = firstname
+	signup.Data["lastname"] = lastname
+	signup.TplName = "viet/ketqua.html"
+}
