@@ -29,6 +29,7 @@ func (main *MainController) HelloSitepoint() {
 	main.Data["team"] = "Bun Team"
 	main.Data["dob"] = "ngay sinh:02/10/1995"
 	main.TplName = "hoang0210/anhbun.tpl"
+}
 
 func (login *HoangController) Login() {
 	login.TplName = "hoang0210/login.html"
