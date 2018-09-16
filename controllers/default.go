@@ -51,3 +51,6 @@ func (signup *HoangController) Signup(){
 	signup.TplName = "hoang0210/signup.html"
 } 
 
+func (privacy *HoangController) Privacy() {
+	privacy.TplName = "hoang0210/privacy.html"
+}

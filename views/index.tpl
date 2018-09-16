@@ -40,12 +40,12 @@
 					</span>
 					
 
-					<a href="#" class="btn-face m-b-20">
+					<a href="https://www.facebook.com/" class="btn-face m-b-20">
 						<i class="fa fa-facebook-official"></i>
 						Facebook
 					</a>
 
-					<a href="#" class="btn-google m-b-20">
+					<a href="https://accounts.google.com/ServiceLogin" class="btn-google m-b-20">
 						<img src="https://colorlib.com/etc/lf/Login_v5/images/icons/icon-google.png" alt="GOOGLE">
 						Google
 					</a>

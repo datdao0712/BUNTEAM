@@ -14,4 +14,5 @@ func init() {
 	beego.Router("/hoang/login", &controllers.HoangController{}, "get:Login")
 	beego.Router("/hoang/show", &controllers.HoangController{}, "post:Show")
 	beego.Router("/signup", &controllers.HoangController{}, "get:Signup")
+	beego.Router("/signup/privacy", &controllers.HoangController{}, "get:Privacy")
 }
