@@ -10,15 +10,22 @@ type MainController struct {
 type SangController struct {
 	beego.Controller
 }
+<<<<<<< HEAD
 type Sang2Controller struct {
 	beego.Controller
 }
 
+=======
+type HoangController struct {
+	beego.Controller
+}
+>>>>>>> 37ad8b86eb3ecf0726eb014b354a4775177ef154
 func (c *MainController) Get() {
 	c.Data["Website"] = "beego.me"
 	c.Data["Email"] = "astaxie@gmail.com"
 	c.TplName = "index.tpl"
 }
+
 
 func (c *MainController) Profile() {
 	c.Data["Website"] = "beego.me"
@@ -35,6 +42,7 @@ func (main *MainController) HelloSitepoint() {
 func (sa *SangController) Get() {
 	sa.TplName = "sang/sang.html"
 }
+<<<<<<< HEAD
 func (sub *SangController) Post() {
 	subfirstname := sub.GetString("firstname")
 	sublastname := sub.GetString("lastname")
@@ -42,3 +50,21 @@ func (sub *SangController) Post() {
 	sub.Data["lastname"] = sublastname
 	sub.TplName = "sang/sang2.html"
 }
+=======
+func (login	 *HoangController) Login() {
+	login.TplName = "hoang0210/login.html"
+}
+
+func (show *HoangController) Show(){
+	user := show.GetString("username")
+	pass := show.GetString("pass")
+	show.Data["username"] = user
+	show.Data["pass"] = pass
+	show.TplName = "hoang0210/show.html"
+} 
+
+func (signup *HoangController) Signup(){
+	signup.TplName = "hoang0210/signup.html"
+} 
+
+>>>>>>> 37ad8b86eb3ecf0726eb014b354a4775177ef154
