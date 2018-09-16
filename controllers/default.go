@@ -10,6 +10,10 @@ type MainController struct {
 type SangController struct {
 	beego.Controller
 }
+type Sang2Controller struct {
+	beego.Controller
+}
+
 type HoangController struct {
 	beego.Controller
 }
@@ -35,6 +39,15 @@ func (main *MainController) HelloSitepoint() {
 func (sa *SangController) Get() {
 	sa.TplName = "sang/sang.html"
 }
+
+func (sub *SangController) Post() {
+	subfirstname := sub.GetString("firstname")
+	sublastname := sub.GetString("lastname")
+	sub.Data["firstname"] = subfirstname
+	sub.Data["lastname"] = sublastname
+	sub.TplName = "sang/sang2.html"
+}
+
 func (login	 *HoangController) Login() {
 	login.TplName = "hoang0210/login.html"
 }
@@ -50,4 +63,3 @@ func (show *HoangController) Show(){
 func (signup *HoangController) Signup(){
 	signup.TplName = "hoang0210/signup.html"
 } 
-
