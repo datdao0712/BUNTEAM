@@ -9,9 +9,7 @@ type SangController struct {
 }
 
 func (s *SangController) Get() {
-	s.Data["Website"] = "beego.me"
-	s.Data["Email"] = "astaxie@gmail.com"
-	s.TplName = "sang/test.html"
+	s.TplName = "sang/homework.html"
 }
 func (s *SangController) Home() {
 	s.TplName = "sang/home.html"
