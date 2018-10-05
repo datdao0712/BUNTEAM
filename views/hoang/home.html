@@ -38,6 +38,22 @@ a:hover {
     text-align: center;
     background-position-x: 0px;
 }
+#bun .text {
+position:relative;
+bottom:30px;
+left:0px;
+font-size: large;
+font-weight: bold;
+visibility:hidden;
+transition: margin-left 3s, background-color 1s;
+  -moz-transition: margin-left 3s, background-color 1s;
+  -webkit-transition: margin-left 3s, background-color 1s;
+}
+
+#bun:hover .text {
+visibility:visible;
+margin-left: 300px;
+}
 /* div {
     position: fixed ;
     margin: 0;
@@ -65,5 +81,9 @@ a:hover {
   <li><b style="text-align:center">&#x220E;</b></li>
   <li><a id="about" href="#">CONTACT</a></li>
 </ul> 
+<br>   
+<div id="bun"> 
+  <img src="https://orig00.deviantart.net/dcee/f/2014/154/a/0/go_lang_mascot_by_kirael_art-d7kunhu.gif" class="hover">
+  <p class="text">CỤC BỦN</p>
 </body>
 </html>
