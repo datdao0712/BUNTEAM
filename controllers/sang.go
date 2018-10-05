@@ -11,7 +11,7 @@ type SangController struct {
 func (s *SangController) Get() {
 	s.Data["Website"] = "beego.me"
 	s.Data["Email"] = "astaxie@gmail.com"
-	s.TplName = "sang/sang.html"
+	s.TplName = "sang/test.html"
 }
 func (s *SangController) Home() {
 	s.TplName = "sang/home.html"
