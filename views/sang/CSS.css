@@ -1,0 +1,50 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #FD6C5B ;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    word-spacing: 0;
+    letter-spacing: 0;
+    font-size: 0;
+}
+li {
+    float: left;
+}
+/* Dấu vuông khó vl */
+.divider-vertical-second-menu{ 
+    height: 41px;
+    width: -2px;
+    margin: 0 0px;
+    overflow: hidden;
+    border-right: 1px solid rgb(165, 28, 28);
+ }
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 13px 25px 9px 25px;
+    text-decoration: none; 
+    margin: 0;
+    font-family: AgencyFB,sans-serif;
+    letter-spacing: 0.2px;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    vertical-align: top;
+    border-bottom: 4px solid #FD6C5B;
+    cursor: pointer;
+}
+
+li a:hover {
+    border-bottom: 4px solid black;
+    color: black;
+}
+@media screen and (max-width: 600px){
+    ul li.right, 
+    ul li {float: none;}
+}
